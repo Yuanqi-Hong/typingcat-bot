@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 test = input('Type 1, 3, or 5 to enter different typing tests: ')
 if test != 1 and test != 3 and test != 5:
-	input('Please only enter 1, 3 or 5: ')
+    input('Please only enter 1, 3 or 5: ')
 
 driver = webdriver.Chrome()
 driver.get('https://thetypingcat.com/typing-speed-test/{}m'.format(test))
